@@ -73,7 +73,17 @@ final int drawable[] ={R.drawable.shape_color_red, R.drawable.shape_color_yellow
 
 
 
-
+        delay = new Handler();
+        for (int i1 = 0; i1 < drawable.length; i1++) {
+            // luu
+            final int j=i;
+            delay.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    v_traffic.setBackgroundResource(drawable[j]);
+                }
+            },1000*i);
+        }
 
 //        for (final int i: drawable) {
 //            delay.postDelayed(new Runnable() {
