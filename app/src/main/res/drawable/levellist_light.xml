@@ -1,0 +1,6 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/lightoff" android:maxLevel="0"></item>
+    <item android:drawable="@drawable/lighton" android:maxLevel="1"></item>
+    <item android:drawable="@drawable/lightonv2" android:maxLevel="2"></item>
+
+</level-list>

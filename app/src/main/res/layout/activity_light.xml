@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/levellist_light"/>
+
+    <SeekBar
+        android:id="@+id/sb_Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+
+        />
+    <TextView
+        android:id="@+id/tv_Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_Light"
+        android:layout_centerHorizontal="true"
+        android:text=""/>
+
+    
+</RelativeLayout>

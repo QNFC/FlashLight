@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_mdpi"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_column="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_column="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_flashlight">
+
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Flash light"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <LinearLayout android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ibtn_Light"
+                    android:layout_width="104dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_light" />
+
+                <TextView
+                    android:layout_width="59dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Light"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="104dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_neon" />
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Neon"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ibtn_traffic"
+                    android:layout_width="104dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_traffic" />
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Traffic"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <LinearLayout android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ibtn_polic"
+                    android:layout_width="104dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_polic" />
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Polic"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_column="2">
+
+                <ImageButton
+                    android:id="@+id/ibtn_Warning"
+                    android:layout_width="104dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_waring" />
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="warning"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

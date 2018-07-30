@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle" >
+            <size android:width="200dp" android:height="200dp"></size>
+            <stroke android:color="#fff" android:width="10dp"></stroke>
+            <gradient android:startColor="#000" ></gradient>
+            <corners android:topLeftRadius="100dp" android:topRightRadius="100dp" android:radius="200dp"></corners>
+
+
+
+        </shape>
+    </item>
+    <item>
+        <inset  android:drawable="@drawable/icon_neon"  android:inset="20dp"></inset></item>
+</layer-list>
