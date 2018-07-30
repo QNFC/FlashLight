@@ -22,6 +22,7 @@ ImageView img_traffic;
 Handler handler , delay;
 Timer timer;
 View v_traffic;
+int i=0;
 final int drawable[] ={R.drawable.shape_color_red, R.drawable.shape_color_yellow, R.drawable.shape_color};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,8 @@ final int drawable[] ={R.drawable.shape_color_red, R.drawable.shape_color_yellow
     }
 
     private void ThucHien() {
+        v_traffic.setBackgroundResource(R.drawable.shape_color_red);
+
         handler = new Handler(){
             @SuppressLint("ResourceAsColor")
             @Override
@@ -51,6 +54,7 @@ final int drawable[] ={R.drawable.shape_color_red, R.drawable.shape_color_yellow
 
                 if (msg.what==1){
                     img_traffic.setImageLevel(level);
+                    v_traffic.setBackgroundResource(drawable[level]);
 
 
 
@@ -67,25 +71,7 @@ final int drawable[] ={R.drawable.shape_color_red, R.drawable.shape_color_yellow
             }
         },1000,1000);
 
-        delay = new Handler();
 
-
-         {
-
-             delay.postDelayed(new Runnable() {
-                 @Override
-                 public void run() {
-
-                   for (int i=0;i<drawable.length;i++){
-                       v_traffic.setBackgroundResource(drawable[i]);
-                       Log.d("aaa", "run: "+i);
-                   }
-
-
-
-                 }
-             },100);
-         }
 
 
 
