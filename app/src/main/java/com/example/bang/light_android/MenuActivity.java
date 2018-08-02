@@ -27,6 +27,7 @@ ImageButton ibtn_Light, ibtn_FL, ibtn_traffic, ibtn_warning, ibtn_polic, ibtn_ne
         ibtn_Light = findViewById(R.id.ibtn_Light);
         ibtn_warning = findViewById(R.id.ibtn_Warning);
         ibtn_traffic = findViewById(R.id.ibtn_traffic);
+        ibtn_polic =findViewById(R.id.ibtn_polic);
     }
 
     @Override
@@ -40,6 +41,9 @@ ImageButton ibtn_Light, ibtn_FL, ibtn_traffic, ibtn_warning, ibtn_polic, ibtn_ne
                 break;
             case R.id.ibtn_traffic:
                 startActivity(new Intent(this, PolicActivity.class));
+                break;
+            case R.id.ibtn_polic:
+                startActivity(new Intent(this, TrafficActivity.class));
                 break;
 
         }
